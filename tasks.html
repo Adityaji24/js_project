@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Page</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+ </head>
+<body>
+  <div class="top-navbar">
+    <ul>
+      <li><a href="#" class="logo">&nbsp;The Achievers Group of companies&nbsp;</a></li>
+      <li><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;</li>
+      <li><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;</li>
+      <li><i class="fa-solid fa-magnifying-glass"></i></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="left-navbar">
+      <ul>
+        <li><a href="userdashboard.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="team.html"><i class="fa-solid fa-users"></i> Team</a></li>
+        <li><a href="#"><i class="fa-solid fa-list-check"></i> Tasks</a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+        <li><a href="#"><i class="fa-solid fa-user"></i> Account</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <form id="task-form" class="form-container">
+        <div class="form-group">
+          <label for="project" class="form-label">Project:</label>
+          <input type="text" class="form-control" id="project" name="project" >
+        </div>
+        <div class="form-group">
+          <label for="start-date" class="form-label">Start Date:</label>
+          <input type="date" class="form-control" id="start-date" name="start-date" >
+        </div>
+        <div class="form-group">
+          <label for="end-date" class="form-label">End Date:</label>
+          <input type="date" class="form-control" id="end-date" name="end-date" >
+        </div>
+        <div class="form-group">
+          <label for="teamwork" class="form-label">Teamwork:</label>
+          <input type="text" class="form-control" id="teamwork" name="teamwork" >
+        </div>
+        <div class="form-group">
+          <label for="status" class="form-label">Status:</label>
+          <select class="form-select" id="status" name="status" >
+            <option value="">Select Status</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <table id="task-table" class="table table-striped">
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Teamwork</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="task-table-body"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="tasks.js"></script>
+    
+</body>
+</html>
